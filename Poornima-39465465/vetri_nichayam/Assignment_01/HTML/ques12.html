@@ -1,0 +1,49 @@
+<!-- Style a navigation menu where links change color on hover, have a different color when visited, and display with custom fonts. Use at least 3 different font properties (font-family, font-size, font-weight or any other 3 od your preferences -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      nav {
+        background-color: rgb(140, 203, 232);
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .right a {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 50px;
+        font-family: "Segoe UI", "Arial", "sans-serif";
+        font-size: 18px;
+        font-weight: 600;
+        margin-right: 30px;
+      }
+      .left {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+      }
+      a:hover {
+        color: rgb(255, 4, 4);
+      }
+    </style>
+
+    <nav>
+      <div class="left">
+        <h2>Welcome</h2>
+      </div>
+      <div class="right">
+        <a href="">Login</a>
+        <a href="">Dashboard</a>
+        <a href="">contact</a>
+      </div>
+    </nav>
+  </body>
+</html>

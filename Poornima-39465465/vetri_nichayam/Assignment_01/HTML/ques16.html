@@ -1,0 +1,40 @@
+<!-- Create a navigation menu once using display:inline (all links in one row) and again using display:block (links stacked vertically), showing the difference clearly. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      nav {
+        height: 70px;
+        background-color: lavender;
+        justify-content: space-around;
+      }
+      .left a {
+        display: inline;
+        margin-right: 20px;
+      }
+      .right a {
+        display: block;
+        margin-bottom: 7px;
+
+        margin-right: 10px;
+      }
+    </style>
+
+    <nav class="left">
+      <a href="">Login</a>
+      <a href="">Dashboard</a>
+      <a href="">contact</a>
+    </nav>
+
+    <nav class="right">
+      <a href="">Login</a>
+      <a href="">Dashboard</a>
+      <a href="">contact</a>
+    </nav>
+  </body>
+</html>

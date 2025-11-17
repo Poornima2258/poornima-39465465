@@ -1,0 +1,73 @@
+<!-- Design a card component (300px × 400px) with an image at the top, a title, a description, and a button at the bottom. Use appropriate backgrounds, borders, padding,
+and margins. The card should have a subtle border and apply a different border style other than solid. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 0;
+      }
+      .outer {
+        background-color: rgb(184, 182, 182);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        border: 4px dotted black;
+        height: 400px;
+        width: 300px;
+        margin: 35%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: azure;
+      }
+      .box img {
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 90%;
+        height: 200px;
+        border-radius: 5px;
+      }
+      .box h3 {
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .box p {
+        font-size: 14px;
+        flex: 1;
+        justify-content: space-evenly;
+      }
+      button:hover {
+        background-color: rgb(119, 171, 249);
+      }
+    </style>
+    <div class="outer">
+      <div class="box">
+        <h3><strong>Brihadeeswarar </strong></h3>
+        <img
+          src="./brihadeeswarar.webp"
+          alt=""
+          height="200px"
+          width="200px"
+        />
+
+        <p>
+          The Brihadeeswarar Temple, located in Thanjavur, Tamil Nadu, is a
+          UNESCO World Heritage Site dedicated to Lord Shiva. Built by the Chola
+          king Raja Raja I around 1010 CE, it is a magnificent example of
+          Dravidian architecture constructed entirely from granite.
+        </p>
+        <button>like</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!-- Create a webpage header that remains fixed at the top of the page while scrolling. The header should contain a logo on the left and navigation links on the right. Use appropriate positioning. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      nav {
+        background-color: rgb(140, 203, 232);
+        height: 70px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+      }
+      .right a {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 50px;
+        font-family: "Segoe UI", "Arial", "sans-serif";
+        font-size: 18px;
+        font-weight: 600;
+        margin-right: 30px;
+      }
+      .left {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        gap: 20px;
+      }
+      a:hover {
+        color: rgb(255, 4, 4);
+      }
+    </style>
+
+    <nav>
+      <div class="left">
+        <img src="./Apple_logo_black.svg" alt="" height="35px" />
+        <h2>Welcome</h2>
+      </div>
+      <div class="right">
+        <a href="">Login</a>
+        <a href="">Dashboard</a>
+        <a href="">contact</a>
+      </div>
+    </nav>
+    <div style="height: 1500px"></div>
+  </body>
+</html>

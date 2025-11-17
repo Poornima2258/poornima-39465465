@@ -1,0 +1,63 @@
+<!-- Create a responsive navigation menu that:
+•
+Displays horizontally on desktop (screens wider than 768px)
+•
+Converts to a vertical stacked menu on mobile (screens 768px or smaller)
+•
+Changes the background color at the medium breakpoint (768px-1024px)
+Use media queries to achieve this. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navigation Menu</title>
+
+    <style>
+      nav {
+        background-color: #4caf50;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      /* ----- MEDIUM SCREENS (Tablets: 768px - 1024px) ----- */
+      @media (max-width: 1024px) and (min-width: 769px) {
+        nav {
+          background-color: #ff9800;
+        }
+      }
+
+      /* ----- MOBILE SCREENS (<= 768px) ----- */
+      @media (max-width: 768px) {
+        nav {
+          background-color: #2196f3;
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+        }
+
+        nav a {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Courses</a>
+      <a href="#">Contact</a>
+    </nav>
+  </body>
+</html>

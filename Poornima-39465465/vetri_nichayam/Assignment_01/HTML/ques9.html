@@ -1,0 +1,59 @@
+<!-- Create three div boxes demonstrating the CSS Box Model. Each box should have different margin, padding, and border values. Display the actual measurements by adding text inside each box explaining its box model properties. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .box {
+        width: 200px;
+        margin-bottom: 25px;
+        background-color: #f9f9f9;
+        font-family: Arial;
+      }
+
+      .outer {
+        margin: 20px;
+        padding: 15px;
+        border: 2px solid #11d556;
+        background-color: lightyellow;
+      }
+
+      .inner1 {
+        margin: 30px;
+        padding: 25px;
+        border: 4px solid #2e86c1;
+        background-color: aquamarine;
+      }
+
+      .inner2 {
+        margin: 40px;
+        padding: 10px;
+        border: 5px solid #ebff0c;
+        background-color: chartreuse;
+      }
+    </style>
+    <div class="outer">
+      <strong>Box 1</strong><br />
+      Margin: 20px<br />
+      Padding: 15px<br />
+      Border: 2px solid
+      <div class="inner1">
+        <strong>Box 2</strong><br />
+        Margin: 30px<br />
+        Padding: 25px<br />
+        Border: 4px dashed
+        <div class="inner2">
+          <strong>Box 3</strong><br />
+          Margin: 40px<br />
+          Padding: 10px<br />
+          Border: 5px dotted
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

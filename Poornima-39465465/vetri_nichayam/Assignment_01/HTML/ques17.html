@@ -1,0 +1,92 @@
+<!-- Create a photo gallery using CSS Flexbox with 6 images. The gallery should:
+•
+Display 3 images per row on desktop
+•
+Center the images horizontally and vertically within their containers
+•
+Have equal spacing between images
+•
+Include links on images and it should navigate to Wikipedia where the information shall be available -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Photo Gallery</title>
+
+    <style>
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        background-color: rgb(59, 103, 170);
+      }
+
+      .gallery-item {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 8px;
+        background: #9dbac3;
+        height: 200px;
+        padding: 10px;
+        border: 2px solid black;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flexbox Photo Gallery</h2>
+
+    <div class="gallery">
+      <a class="gallery-item" href="./Taj_Mahal_(Edited).jpeg.webp">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg"
+          alt="Taj Mahal"
+        />
+      </a>
+
+      <a class="gallery-item" href="https://en.wikipedia.org/wiki/Eiffel_Tower">
+        <img
+          src="./Eiffel_Wikimedia_Commons_(cropped).jpg"
+          alt="Eiffel Tower"
+        />
+      </a>
+
+      <a
+        class="gallery-item"
+        href="https://en.wikipedia.org/wiki/Great_Wall_of_China"
+      >
+        <img src="./The_Great_Wall_of_China.jpg" alt="Great Wall of China" />
+      </a>
+
+      <a class="gallery-item" href="https://en.wikipedia.org/wiki/Machu_Picchu">
+        <img src="./Machu_Picchu,_2023_(012).jpg" alt="Machu Picchu" />
+      </a>
+
+      <a class="gallery-item" href="https://en.wikipedia.org/wiki/Colosseum">
+        <img src="./Colosseo_2020.jpg" alt="Colosseum" />
+      </a>
+
+      <a
+        class="gallery-item"
+        href="https://en.wikipedia.org/wiki/Statue_of_Liberty"
+      >
+        <img
+          src="./Front_view_of_Statue_of_Liberty.jpg"
+          alt="Statue of Liberty"
+        />
+      </a>
+    </div>
+  </body>
+</html>

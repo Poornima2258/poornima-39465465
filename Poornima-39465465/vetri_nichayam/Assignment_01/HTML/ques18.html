@@ -1,0 +1,135 @@
+<!-- Design a dashboard layout using CSS Grid with the following sections:
+•
+Header (spanning full width)
+•
+Sidebar (left side, 1/4 width)
+•
+Main content area (center, 2/4 width)
+•
+Widget panel (right side, 1/4 width)
+•
+Footer (spanning full width)
+Use grid-template-columns/rows for the layout. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Dashboard</title>
+
+    <style>
+      .outer {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr; /* sidebar | maincontent | widget */
+        grid-template-rows: 80px 500px 60px; /* header | middle | footer */
+        height: 100vh;
+        gap: 10px;
+      }
+
+      /* Header spans all 3 columns */
+      .Header {
+        grid-column: 1 / 4;
+        background-color: #aed0eb;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      /* Sidebar (1/4 width) */
+      .sidebar {
+        background-color: #c8e6c9;
+      }
+
+      /* Main content (2/4 width) */
+      .mca {
+        background-color: #fff9c4;
+      }
+
+      /* Widget panel (1/4 width) */
+      .wp {
+        background-color: #ffe0b2;
+      }
+
+      /* Footer spans full width */
+      .footer {
+        grid-column: 1 / 4;
+        background-color: #d1c4e9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+      }
+      .mca img {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 20px;
+      }
+      .wp img {
+        margin: 10px;
+      }
+      .wp h3 {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="Header">Welcome, Continue Learning</div>
+
+      <div class="sidebar">
+        Sidebar
+        <h4>Modules</h4>
+        <ul>
+          <li>Introduction to Sql</li>
+          <br />
+          <li>Syntax and basics</li>
+          <br />
+          <li>Select Statement</li>
+          <br />
+          <li>keys in sql</li>
+          <br />
+          <li>Primary and Foreign Key</li>
+          <br />
+          <li>Operators</li>
+          <br />
+          <li>Special operators</li>
+          <br />
+          <li>Having and where clause</li>
+          <br />
+          <li>Joins and types</li>
+          <br />
+          <li>Assessment</li>
+        </ul>
+      </div>
+
+      <div class="mca">
+        Main Content Area
+        <img
+          src="./sql-for-data-science.jpeg"
+          alt=""
+          height="300px"
+          width="500px"
+        />
+        <p>
+          Offered by University of California, Davis. As data collection has
+          increased exponentially, so has the need for people skilled at using
+          and Enroll for free. High-quality curriculum. Earn a Course
+          Certificate. Job-ready certificates. Flexible Online Learning. 100%
+          Online Courses.
+        </p>
+      </div>
+
+      <div class="wp">
+        Widget Panel
+        <img src="./50-percent-blue.webp" alt="" />
+        <h3>course completed : 50%</h3>
+      </div>
+
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>

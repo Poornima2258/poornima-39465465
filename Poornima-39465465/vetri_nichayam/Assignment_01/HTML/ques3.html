@@ -1,0 +1,47 @@
+<!-- Create a registration form with the following fields: Username, Email, Password, Confirm Password, Date of Birth, Gender (radio buttons), Country (dropdown), Terms & Conditions (checkbox), and a Submit button. Use appropriate input types and include placeholder text. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Registration Form</h3>
+    <form action="">
+      <fieldset>
+        <label for="">username</label>
+        <input type="text" placeholder="enter username" /> <br />
+
+        <label for="">Email</label>
+        <input type="email" placeholder="email" /> <br />
+
+        <label for="">Password</label>
+        <input type="password" placeholder="password" /> <br />
+
+        <label for="">DOB</label>
+        <input type="date" placeholder="DOB" /> <br />
+
+        <label for="">Female</label>
+        <input type="radio" name="Gender" />
+        <label for="">Male</label>
+        <input type="radio" name="Gender" /> <br />
+
+        <label for="">Country</label>
+        <select name="country">
+          <option value="select country"></option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="Uk">uk</option>
+        </select>
+        <br />
+
+        <input type="checkbox" />
+        <label for="">I agree to terms and condition</label>
+      </fieldset>
+    </form>
+
+    <button>Submit</button>
+  </body>
+</html>
