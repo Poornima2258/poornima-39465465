@@ -1,0 +1,119 @@
+[
+  {
+    "id": "cse",
+    "name": "Computer Science Engineering",
+    "description": "Focuses on software development, algorithms, and computing systems.",
+    "fullDescription": "The CSE department provides strong foundations in algorithms, data structures, software engineering, and systems. Students learn modern programming, databases, cloud, and AI fundamentals.",
+    "courses": [
+      "Data Structures & Algorithms",
+      "Operating Systems",
+      "Database Management Systems",
+      "Computer Networks"
+    ],
+    "faculty": [
+      "Dr. Kumar",
+      "Dr. Meena",
+      "Prof. Arjun"
+    ],
+    "labs": [
+      "Programming Lab",
+      "Networks Lab",
+      "AI Lab"
+    ]
+  },
+  {
+    "id": "it",
+    "name": "Information Technology",
+    "description": "Covers software, networking, and information systems.",
+    "fullDescription": "IT department emphasizes practical software development, networking, and information systems with hands-on lab exposure and industry-oriented electives.",
+    "courses": [
+      "Software Engineering",
+      "Web Technologies",
+      "Network Security"
+    ],
+    "faculty": [
+      "Dr. Ramesh",
+      "Prof. Leela"
+    ],
+    "labs": [
+      "Software Lab",
+      "Network Lab"
+    ]
+  },
+  {
+    "id": "ece",
+    "name": "Electronics & Communication Engineering",
+    "description": "Focuses on electronics, signal processing, and communication systems.",
+    "fullDescription": "ECE trains students in circuits, embedded systems, signal processing and communication technologies with laboratory practice and project work.",
+    "courses": [
+      "Analog Circuits",
+      "Digital Signal Processing",
+      "Embedded Systems"
+    ],
+    "faculty": [
+      "Dr. Priya",
+      "Dr. Suresh"
+    ],
+    "labs": [
+      "Circuits Lab",
+      "Communication Lab"
+    ]
+  },
+  {
+    "id": "mechanical",
+    "name": "Mechanical Engineering",
+    "description": "Teaches mechanics, thermodynamics and manufacturing.",
+    "fullDescription": "Mechanical department deals with machine design, thermodynamics, manufacturing processes and CAD/CAE tools to prepare students for core engineering roles.",
+    "courses": [
+      "Thermodynamics",
+      "Machine Design",
+      "Manufacturing Processes"
+    ],
+    "faculty": [
+      "Dr. Anand",
+      "Prof. Kavya"
+    ],
+    "labs": [
+      "ME Workshop",
+      "CAD Lab"
+    ]
+  },
+  {
+    "id": "civil",
+    "name": "Civil Engineering",
+    "description": "Covers structures, construction, and surveying.",
+    "fullDescription": "Civil department covers structural engineering, construction management, geotechnical engineering, and surveying with practical site visits and labs.",
+    "courses": [
+      "Structural Analysis",
+      "Geotechnical Engineering",
+      "Construction Management"
+    ],
+    "faculty": [
+      "Dr. Nisha",
+      "Prof. Bala"
+    ],
+    "labs": [
+      "Materials Lab",
+      "Survey Lab"
+    ]
+  },
+  {
+    "id": "mba",
+    "name": "Master of Business Administration",
+    "description": "Focuses on management, finance and marketing.",
+    "fullDescription": "MBA program prepares students with management fundamentals, leadership, finance, marketing and entrepreneurship through case studies and internships.",
+    "courses": [
+      "Marketing Management",
+      "Financial Management",
+      "Human Resource Management"
+    ],
+    "faculty": [
+      "Dr. Vijay",
+      "Prof. Radha"
+    ],
+    "labs": [
+      "Management Lab",
+      "Computer Lab"
+    ]
+  }
+]
